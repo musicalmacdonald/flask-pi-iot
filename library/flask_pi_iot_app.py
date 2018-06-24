@@ -63,9 +63,19 @@ def david_page():
         print(request.form)
     return render_template('davidpi.html')
 
+@app.route('/shanepi.html',methods=['POST','GET'])
+def shane_page():
+    if request.method == 'POST':
+        print("ShanePi got a post")
+        print(request.form)
+    return render_template('shanepi.html')
+
 @app.route('/alldata.html',methods=['POST','GET'])
-def david_page():
+def alldata_page():
     if request.method == 'POST':
         print("All Data got a post")
         print(request.form)
+        d=aPID.get_readings()
+        print(d)
+        return render_template('alldata.html', data = d)
     return render_template('alldata.html')
