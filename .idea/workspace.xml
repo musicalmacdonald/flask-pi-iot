@@ -1,18 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="8cbda816-2fa9-44d4-b9c0-165a5af72d42" name="Default" comment="">
+    <list default="true" id="8cbda816-2fa9-44d4-b9c0-165a5af72d42" name="Default" comment="update to jija template standards (add base html with extends keywords)">
       <change beforePath="" afterPath="$PROJECT_DIR$/jinja.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/library/templates/__init__.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/library/templates/base.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/library/templates/test_jinja.html" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/library/templates/alldata.html" afterPath="$PROJECT_DIR$/library/templates/alldata.html" />
-      <change beforePath="$PROJECT_DIR$/library/templates/davidpi.html" afterPath="$PROJECT_DIR$/library/templates/davidpi.html" />
-      <change beforePath="$PROJECT_DIR$/library/templates/index.html" afterPath="$PROJECT_DIR$/library/templates/index.html" />
-      <change beforePath="$PROJECT_DIR$/library/templates/johnpi.html" afterPath="$PROJECT_DIR$/library/templates/johnpi.html" />
-      <change beforePath="$PROJECT_DIR$/library/templates/katiepi.html" afterPath="$PROJECT_DIR$/library/templates/katiepi.html" />
-      <change beforePath="$PROJECT_DIR$/library/templates/meganpi.html" afterPath="$PROJECT_DIR$/library/templates/meganpi.html" />
-      <change beforePath="$PROJECT_DIR$/library/templates/shanepi.html" afterPath="$PROJECT_DIR$/library/templates/shanepi.html" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -550,7 +542,14 @@
       <option name="project" value="LOCAL" />
       <updated>1529854686100</updated>
     </task>
-    <option name="localTasksCounter" value="28" />
+    <task id="LOCAL-00028" summary="update to jija template standards (add base html with extends keywords)">
+      <created>1529864846855</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1529864846855</updated>
+    </task>
+    <option name="localTasksCounter" value="29" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -588,12 +587,12 @@
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1616" height="876" extended-state="6" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19062698" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19062698" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33378932" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.36300418" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.36300418" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -646,7 +645,8 @@
     <MESSAGE value="New test to validate if l is a list" />
     <MESSAGE value="Add_reading integrated into flask website" />
     <MESSAGE value="add shanepi.html, approute and nav reference&#10;&#10;update alldata.html to post accelerometer data in a table" />
-    <option name="LAST_COMMIT_MESSAGE" value="add shanepi.html, approute and nav reference&#10;&#10;update alldata.html to post accelerometer data in a table" />
+    <MESSAGE value="update to jija template standards (add base html with extends keywords)" />
+    <option name="LAST_COMMIT_MESSAGE" value="update to jija template standards (add base html with extends keywords)" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
