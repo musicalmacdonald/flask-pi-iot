@@ -1,0 +1,35 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Main Menu</title>
+<!--<link href="piled.css" rel="stylesheet" type="text/css">-->
+<link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='styles/piled.css') }}">
+
+</head>
+	
+	<page class="wrapper">
+		<header class="header">Home
+			<ul class="navigation">
+				<li><a href="{{url_for('main_page') }}">Home</a></li>
+				<li><a href="{{url_for('alldata_page') }}">All Data</a></li>
+				<li><a href="{{url_for('john_page') }}">John</a></li>
+				<li><a href="{{url_for('megan_page') }}">Megan</a></li>
+				<li><a href="{{url_for('katie_page') }}">Katie</a></li>
+				<li><a href="{{url_for('david_page') }}">David</a></li>
+				<li><a href="{{url_for('shane_page') }}">Shane</a></li>
+			 </ul>
+		</header>
+
+		<main-content class="main">
+			{% block content %}
+		      <p> something simple </p>
+			{% endblock %}
+		</main-content>
+
+
+		<footer class="footer">Footer</footer>
+	</page>
+	
+</body>
+</html>
