@@ -12,11 +12,11 @@ class DataPoster():
     def __init__(self):
         self._valid_servers = []
         self._invalid_servers = []
-        self._server_list = ['http://megan-pi-iot.cfapps.io/index.html',
-                     'http://katie-pi-iot.cfapps.io/index.html',
-                    'http://david-pi-iot.cfapps.io/index.html',
-                    'http://jpf-flask-pi-iot.cfapps.io/index.html',
-                    'http://shane-pi-iot.cfapps.io/index.html']
+        self._server_list = ['http://megan-pi-iot.cfapps.io/test',
+                     'http://katie-pi-iot.cfapps.io/test',
+                    'http://david-pi-iot.cfapps.io/test',
+                    'http://jpf-flask-pi-iot.cfapps.io/test',
+                    'http://shane-pi-iot.cfapps.io/test']
 
     def getserial(self):
         # Extract serial from cpuinfo file
@@ -35,16 +35,18 @@ class DataPoster():
     def get_ServerList(self):
         return self._server_list
 
-    def get_valid_servers(self):
-        sl = self.get_ServerList()
+    def get_valid_servers(self, serverList):
+        self._valid_servers = []
+        self._invalid_servers = []
+        sl = serverList
         for server in sl:
             r = requests.get(server)
             if r.status_code != 200:
                 self._invalid_servers.append(server)
-                print('Added {} to INVALID server list' .format(server))
+                # print('Added {} to INVALID server list' .format(server))
             else:
                 self._valid_servers.append(server)
-                print('Added {} to VALID server list'.format(server))
+                # print('Added {} to VALID server list'.format(server))
         return(self._valid_servers)
 
     def accel_read(self):
@@ -53,13 +55,38 @@ class DataPoster():
         z = random.randrange(0, 10, 1)
         return (x, y, z)
 
+    # def refind_valid_servers(self):
+    #     self._valid_servers = []
+    #     self.get_valid_servers()
+    #     return(self._valid_servers)
+
+    def post_to_valid_servers(self, aData):
+        self.get_valid_servers(self.get_ServerList())
+        n = 0
+        for server in self._valid_servers:
+            r = requests.post(server, data=aData)
+            if r.status_code != 200:
+                print("server: {} returned error code: {}".format(server, r.status_code))
+            else:
+                n = n + 1
+        return n
+
+    def update_active_server_cach(self):
+        pass
+
 if __name__ == '__main__':
     dP = DataPoster()
     while True:
+        #tbd now make all this into a function
         x,y,z=dP.accel_read()
         print('X={0}, Y={1}, Z={2}'.format(x, y, z))
         ts=datetime.datetime.fromtimestamp(time.time()).strftime('%Y-%m-%d %H:%M:%S')
         myserial = dP.getserial()
         aData={'serial-number': myserial, 'timestamp': ts,  'x': x, 'y': y, 'z': z}
         print(aData)
-        r=requests.post('http://megan-pi-iot.cfapps.io/test',data=aData)
+        #tbd end of the new function
+
+        dP.post_to_valid_servers(aData)
+
+        #tbd wrap above in a loop to periodically check for valid servers
+
