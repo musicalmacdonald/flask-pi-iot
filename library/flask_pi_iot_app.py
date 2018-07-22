@@ -73,9 +73,9 @@ def shane_page():
 @app.route('/alldata.html',methods=['POST','GET'])
 def alldata_page():
     if request.method == 'POST':
-        print("All Data got a post")
-        print(request.form)
-        d=aPID.get_readings()
-        print(d)
-        return render_template('alldata.html', data = d)
-    return render_template('alldata.html')
+        pass
+    print("All Data got a GET")
+    print(request.form)
+    d=data.get_readings()
+    print(d)
+    return render_template('alldata.html', data = d)

@@ -1,7 +1,10 @@
 #Test the accelerometer code
 
 import unittest
-import accelerometer_post as ap
+import mock_data_poster as mDP
+
+
+dP = mDP.DataPoster()
 
 
 class test_accelerometer_post(unittest.TestCase):
@@ -11,21 +14,25 @@ class test_accelerometer_post(unittest.TestCase):
 
     #test the host name list
     def test_get_ServerList(self):
-        l = ap.get_ServerList()
+        l = dP.get_ServerList()
         self.assertTrue(type(l) == type(list()))
         self.assertTrue(len(l) > 0)
 
     def test_servers(self):
-        l = ap.get_valid_servers()
+        l = dP.get_valid_servers()
         self.assertTrue(len(l) > 0)
 
-    #testing valid servers
-    def get_valid_servers(self):
-        print(ap.ServerList)
+    #testing if no servers are available
+    def test_empty_servers(self):
+        l = dP.get_valid_servers()
+        self.assertTrue(len(l) == 0)
+
+
+
+
+
+
 
 
 if __name__ == '__main__':
     unittest.main()
-
-
-
