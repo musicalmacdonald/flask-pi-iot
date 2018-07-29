@@ -74,18 +74,19 @@ class DataPoster():
     def update_active_server_cach(self):
         pass
 
+    def get_accelerometer_data(self):
+        x, y, z = self.accel_read()
+        print('X={0}, Y={1}, Z={2}'.format(x, y, z))
+        ts = datetime.datetime.fromtimestamp(time.time()).strftime('%Y-%m-%d %H:%M:%S')
+        myserial = self.getserial()
+        aData = {'serial-number': myserial, 'timestamp': ts, 'x': x, 'y': y, 'z': z}
+        print(aData)
+        return aData
+
 if __name__ == '__main__':
     dP = DataPoster()
     while True:
-        #tbd now make all this into a function
-        x,y,z=dP.accel_read()
-        print('X={0}, Y={1}, Z={2}'.format(x, y, z))
-        ts=datetime.datetime.fromtimestamp(time.time()).strftime('%Y-%m-%d %H:%M:%S')
-        myserial = dP.getserial()
-        aData={'serial-number': myserial, 'timestamp': ts,  'x': x, 'y': y, 'z': z}
-        print(aData)
-        #tbd end of the new function
-
+        aData = dP.get_accelerometer_data()
         dP.post_to_valid_servers(aData)
 
         #tbd wrap above in a loop to periodically check for valid servers

@@ -35,12 +35,7 @@ class test_accelerometer_post(unittest.TestCase):
     def test_post_to_valid_servers(self):
         dP = mDP.DataPoster()
 
-        x, y, z = dP.accel_read()
-        print('X={0}, Y={1}, Z={2}'.format(x, y, z))
-        ts = datetime.datetime.fromtimestamp(time.time()).strftime('%Y-%m-%d %H:%M:%S')
-        myserial = dP.getserial()
-        aData = {'serial-number': myserial, 'timestamp': ts, 'x': x, 'y': y, 'z': z}
-        print(aData)
+        aData = dP.get_accelerometer_data()
 
         l = dP.get_valid_servers(dP.get_ServerList())
         print("This is valid_server list: {}".format(l))
