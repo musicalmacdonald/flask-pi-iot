@@ -85,9 +85,12 @@ class DataPoster():
 
 if __name__ == '__main__':
     dP = DataPoster()
+    oldtime = time.time()
     while True:
-        aData = dP.get_accelerometer_data()
-        dP.post_to_valid_servers(aData)
+        dP.post_to_valid_servers(dP.get_accelerometer_data())
+        newtime = time.time()
+        if 60 >= newtime - oldtime:
+           dP.get_valid_servers(dP.get_ServerList())
+           oldtime = time.time()
 
-        #tbd wrap above in a loop to periodically check for valid servers
 
