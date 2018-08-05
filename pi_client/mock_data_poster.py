@@ -4,20 +4,16 @@ import requests
 import time
 import datetime
 import random
-import config/yml_config_from_url as cfg
+from pi_client.config import yml_config_from_url as cfg
 
-
+y = cfg.YamlConfig()
 
 class DataPoster():
 
     def __init__(self):
         self._valid_servers = []
         self._invalid_servers = []
-        self._server_list = ['http://megan-pi-iot.cfapps.io/test',
-                     'http://katie-pi-iot.cfapps.io/test',
-                    'http://david-pi-iot.cfapps.io/test',
-                    'http://jpf-flask-pi-iot.cfapps.io/test',
-                    'http://shane-pi-iot.cfapps.io/test']
+        self._server_list = y.yml_cofig_from_url("https://raw.githubusercontent.com/musicalmacdonald/flask-pi-iot/master/pi_client/config/config.yml")
 
     def getserial(self):
         # Extract serial from cpuinfo file
