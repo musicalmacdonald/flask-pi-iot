@@ -1,0 +1,6 @@
+config_data:
+  serverList: ['http://megan-pi-iot.cfapps.io/test',
+                     'http://katie-pi-iot.cfapps.io/test',
+                    'http://david-pi-iot.cfapps.io/test',
+                    'http://jpf-flask-pi-iot.cfapps.io/test',
+                    'http://shane-pi-iot.cfapps.io/test']
