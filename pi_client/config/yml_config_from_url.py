@@ -11,8 +11,16 @@ class YamlConfig():
         if response.status_code == 200:
             config = yaml.load(response.text)
             for key in config:
-                newConfigDitionary = config[key]
-            for key in newConfigDitionary:
+                key = config[key]
+            print(newConfigDitionary)
+        # >> > yaml.load("""
+        # ... none: [~, null]
+        # ... bool: [true, false, on, off]
+        # ... int: 42
+        # ... float: 3.14159
+        # ... list: [LITE, RES_ACID, SUS_DEXT]
+        # ... dict: {hp: 13, sp: 5}
+        # ... """)
 
 
         return newConfigDitionary

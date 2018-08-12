@@ -15,7 +15,7 @@ class test_yaml_cofig(unittest.TestCase):
         y2 = y.YamlConfig()
         result = y2.yml_config_from_url(url)
         print(result)
-        self.assertTrue(result['passwd'] == 'my secret password')
+        self.assertTrue(result['servers'] == 'my secret password')
 
 
 
