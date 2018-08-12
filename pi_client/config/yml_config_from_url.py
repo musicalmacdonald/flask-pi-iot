@@ -10,10 +10,12 @@ class YamlConfig():
         response = requests.get(url)
         if response.status_code == 200:
             config = yaml.load(response.text)
-            print(type(config))
-            print(config)
+            for key in config:
+                newConfigDitionary = config[key]
+            for key in newConfigDitionary:
 
-        return config
+
+        return newConfigDitionary
 
 
 if __name__ == '__main__':
