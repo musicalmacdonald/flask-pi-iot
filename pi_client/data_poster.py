@@ -3,13 +3,19 @@ import Adafruit_ADXL345
 import requests
 import time
 import datetime
+from pi_client.config import yml_config_from_url as cfg
+
+y = cfg.YamlConfig()
 
 accel = Adafruit_ADXL345.ADXL345()
 
 class DataPoster():
 
     def __init__(self):
-        return
+        self._valid_servers = []
+        self._invalid_servers = []
+        self._server_list = y.yml_cofig_from_url(
+            "https://raw.githubusercontent.com/musicalmacdonald/flask-pi-iot/master/pi_client/config/config.yml")
 
     def getserial(self):
         # Extract serial from cpuinfo file
@@ -26,28 +32,49 @@ class DataPoster():
         return cpuserial
 
     def get_ServerList(self):
-        ServerList = ['http://megan-pi-iot.cfapps.io/index.html', 'http://katie-pi-iot.cfapps.io/index.html', 'http://david-pi-iot.cfapps.io/index.html', 'http://jpf-flask-pi-iot.cfapps.io/index.html', 'http://shane-pi-iot.cfapps.io/index.html']
-        return ServerList
+        return self._server_list
 
-    def get_valid_servers(self):
-        sl = get_ServerList()
+    def get_valid_servers(self, serverList):
+        self._valid_servers = []
+        self._invalid_servers = []
+        sl = serverList
         for server in sl:
-            print('server name: ' + server)
             r = requests.get(server)
-            print('status return: {0}'.format(r.status_code))
-
             if r.status_code != 200:
-                print('removed {0}' .format(server))
-                sl.remove(server)
+                self._invalid_servers.append(server)
+                # print('Added {} to INVALID server list' .format(server))
+            else:
+                self._valid_servers.append(server)
+                # print('Added {} to VALID server list'.format(server))
+        return (self._valid_servers)
 
-        return(sl)
+    def post_to_valid_servers(self, aData):
+        self.get_valid_servers(self.get_ServerList())
+        n = 0
+        for server in self._valid_servers:
+            r = requests.post(server, data=aData)
+            if r.status_code != 200:
+                print("server: {} returned error code: {}".format(server, r.status_code))
+            else:
+                n = n + 1
+        return n
+
+    def get_accelerometer_data(self):
+        x, y, z = accel.read()
+        print('X={0}, Y={1}, Z={2}'.format(x, y, z))
+        ts = datetime.datetime.fromtimestamp(time.time()).strftime('%Y-%m-%d %H:%M:%S')
+        myserial = self.getserial()
+        aData = {'serial-number': myserial, 'timestamp': ts, 'x': x, 'y': y, 'z': z}
+        print(aData)
+        return aData
 
 if __name__ == '__main__':
+
+    dP = DataPoster()
+    oldtime = time.time()
     while True:
-        x,y,z=accel.read()
-        print('X={0}, Y={1}, Z={2}'.format(x, y, z))
-        ts=datetime.datetime.fromtimestamp(time.time()).strftime('%Y-%m-%d %H:%M:%S')
-        myserial = getserial()
-        aData={'serial-number': myserial, 'timestamp': ts,  'x': x, 'y': y, 'z': z}
-        print(aData)
-        r=requests.post('http://megan-pi-iot.cfapps.io/test',data=aData)
+        dP.post_to_valid_servers(dP.get_accelerometer_data())
+        newtime = time.time()
+        if 60 >= newtime - oldtime:
+            dP.get_valid_servers(dP.get_ServerList())
+            oldtime = time.time()
