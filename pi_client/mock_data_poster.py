@@ -8,7 +8,7 @@ import requests
 import time
 import datetime
 import random
-from pi_client.config import yml_config_from_url as cfg
+from config import yml_config_from_url as cfg
 
 y = cfg.YamlConfig()
 
