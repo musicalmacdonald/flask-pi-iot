@@ -1,4 +1,8 @@
 # Mock Pi file
+runningOnPi = False
+if runningOnPi:
+    import Adafruit_ADXL345
+    accel = Adafruit_ADXL345.ADXL345()
 
 import requests
 import time
@@ -13,7 +17,7 @@ class DataPoster():
     def __init__(self):
         self._valid_servers = []
         self._invalid_servers = []
-        self._server_list = y.yml_cofig_from_url("https://raw.githubusercontent.com/musicalmacdonald/flask-pi-iot/master/pi_client/config/config.yml")
+        self._server_list = y.yml_config_from_url("https://raw.githubusercontent.com/katiebrown0729/flask-pi-iot/master/pi_client/config/config.yml")
 
     def getserial(self):
         # Extract serial from cpuinfo file
@@ -25,7 +29,7 @@ class DataPoster():
                     cpuserial = line[10:26]
             f.close()
         except:
-            cpuserial = "ERROR000000000"
+            cpuserial = "MEGAN000000000"
 
         return cpuserial
 
@@ -37,7 +41,8 @@ class DataPoster():
         self._invalid_servers = []
         sl = serverList
         for server in sl:
-            r = requests.get(server)
+            getUrl = server + "/index.html"
+            r = requests.get(getUrl)
             if r.status_code != 200:
                 self._invalid_servers.append(server)
                 # print('Added {} to INVALID server list' .format(server))
@@ -61,22 +66,27 @@ class DataPoster():
         self.get_valid_servers(self.get_ServerList())
         n = 0
         for server in self._valid_servers:
-            r = requests.post(server, data=aData)
+            postUrl = server + "/test"
+            r = requests.post(postUrl, data=aData)
             if r.status_code != 200:
                 print("server: {} returned error code: {}".format(server, r.status_code))
             else:
                 n = n + 1
+                print('Successfully sent data to {}'.format(server))
         return n
 
     def update_active_server_cach(self):
         pass
 
     def get_accelerometer_data(self):
-        x, y, z = self.accel_read()
+        if(runningOnPi):
+            x, y, z = accel.read()
+        else:
+            x, y, z = self.accel_read()
         print('X={0}, Y={1}, Z={2}'.format(x, y, z))
         ts = datetime.datetime.fromtimestamp(time.time()).strftime('%Y-%m-%d %H:%M:%S')
         myserial = self.getserial()
-        aData = {'serial-number': myserial, 'timestamp': ts, 'x': x, 'y': y, 'z': z}
+        aData = {'serial-no': myserial, 'timestamp': ts, 'x': x, 'y': y, 'z': z}
         print(aData)
         return aData
 
