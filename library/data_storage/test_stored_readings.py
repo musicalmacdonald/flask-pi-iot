@@ -68,9 +68,29 @@ class TestStoredReadings(unittest.TestCase):
 
         print(aSR.list_readings())
 
-    def test_get_readings_by_serial(self):
+    # def test_get_readings_by_serial(self):
+    #
+    #     aSR = StoredReadings()
+    #     serialNo=['MEGAN0000000', 'SHANE0000000', 250]
+    #
+    #     for i in range(0, 3):
+    #         x = random.randint(0, 358)
+    #         y = random.randint(0, 358)
+    #         z = random.randint(0, 358)
+    #         serialNumber = serialNo[i]
+    #         date = datetime.datetime
+    #         aSR.add_readings(serialNumber, 'date', x, y, z)
+    #
+    #     print(aSR.list_readings())
+    #     serialList = aSR.get_readings_by_serial('250')
+    #     print(serialList)
+    #     print(len(serialList))
+    #     #n = serialList.get_number_of_readings()
+    #     print('n is: {}'.format(n))
+    #     self.assertTrue(n == 1)
 
-        aSR= StoredReadings()
+    def test_get_first_reading(self):
+        aSR = StoredReadings()
         serialNo=['MEGAN0000000', 'SHANE0000000', 250]
 
         for i in range(0, 3):
@@ -81,15 +101,10 @@ class TestStoredReadings(unittest.TestCase):
             date = datetime.datetime
             aSR.add_readings(serialNumber, 'date', x, y, z)
 
-        print(aSR.list_readings())
-        serialList = aSR.get_readings_by_serial('250')
-        print(serialList)
-        print(len(serialList))
-        #n = serialList.get_number_of_readings()
-        print('n is: {}'.format(n))
-        self.assertTrue(n == 1)
+        fr = aSR.get_first_reading()
 
-
+        self.assertTrue(type(fr) == dict)
+        self.assertTrue(len(fr) == 5)
 
 
 

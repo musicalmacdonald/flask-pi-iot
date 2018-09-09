@@ -27,23 +27,23 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="stored_readings.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="stored_readings.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/library/data_storage/stored_readings.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="408">
-              <caret line="24" column="43" lean-forward="false" selection-start-line="24" selection-start-column="36" selection-end-line="24" selection-end-column="43" />
+            <state relative-caret-position="357">
+              <caret line="17" column="92" lean-forward="false" selection-start-line="17" selection-start-column="92" selection-end-line="17" selection-end-column="92" />
               <folding>
-                <element signature="e#48#67#0" expanded="true" />
+                <element signature="e#163#182#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="test_stored_readings.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="test_stored_readings.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/library/data_storage/test_stored_readings.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1462">
-              <caret line="86" column="30" lean-forward="false" selection-start-line="86" selection-start-column="30" selection-end-line="86" selection-end-column="30" />
+            <state relative-caret-position="2016">
+              <caret line="105" column="0" lean-forward="false" selection-start-line="105" selection-start-column="0" selection-end-line="105" selection-end-column="0" />
               <folding>
                 <element signature="e#122#137#0" expanded="true" />
               </folding>
@@ -109,7 +109,11 @@
       <find>accel</find>
       <find>x,</find>
       <find>add_readings_withLoc</find>
+      <find>datetime.</find>
     </findStrings>
+    <replaceStrings>
+      <replace>datetime.datetime.now()</replace>
+    </replaceStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -143,8 +147,8 @@
         <option value="$PROJECT_DIR$/pi_client/config/config.yml" />
         <option value="$PROJECT_DIR$/pi_client/config/yml_config_from_url.py" />
         <option value="$PROJECT_DIR$/pi_client/mock_data_poster.py" />
-        <option value="$PROJECT_DIR$/library/data_storage/stored_readings.py" />
         <option value="$PROJECT_DIR$/library/data_storage/test_stored_readings.py" />
+        <option value="$PROJECT_DIR$/library/data_storage/stored_readings.py" />
       </list>
     </option>
   </component>
@@ -169,7 +173,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
       <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
@@ -210,6 +213,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -669,25 +673,17 @@
       <option name="project" value="LOCAL" />
       <updated>1535913246807</updated>
     </task>
-    <option name="localTasksCounter" value="45" />
+    <task id="LOCAL-00045" summary="added functionality to print readings and filter by serial number with associated unittests">
+      <created>1536445364288</created>
+      <option name="number" value="00045" />
+      <option name="presentableId" value="LOCAL-00045" />
+      <option name="project" value="LOCAL" />
+      <updated>1536445364288</updated>
+    </task>
+    <option name="localTasksCounter" value="46" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="Unittests_in_test_stored_readings_py - 2018.09.06 at 19h 41m 24s.xml">
-      <configuration name="Unittests in test_stored_readings.py" configurationId="tests" />
-    </history-entry>
-    <history-entry file="Unittests_in_test_stored_readings_py - 2018.09.06 at 19h 41m 28s.xml">
-      <configuration name="Unittests in test_stored_readings.py" configurationId="tests" />
-    </history-entry>
-    <history-entry file="Unittests_in_test_stored_readings_py - 2018.09.06 at 19h 42m 48s.xml">
-      <configuration name="Unittests in test_stored_readings.py" configurationId="tests" />
-    </history-entry>
-    <history-entry file="Unittests_in_test_stored_readings_py - 2018.09.06 at 19h 43m 34s.xml">
-      <configuration name="Unittests in test_stored_readings.py" configurationId="tests" />
-    </history-entry>
-    <history-entry file="Unittests_in_test_stored_readings_py - 2018.09.06 at 19h 44m 03s.xml">
-      <configuration name="Unittests in test_stored_readings.py" configurationId="tests" />
-    </history-entry>
     <history-entry file="Unittests_in_test_stored_readings_py - 2018.09.06 at 19h 44m 45s.xml">
       <configuration name="Unittests in test_stored_readings.py" configurationId="tests" />
     </history-entry>
@@ -703,21 +699,35 @@
     <history-entry file="Unittests_in_test_stored_readings_py - 2018.09.06 at 19h 49m 16s.xml">
       <configuration name="Unittests in test_stored_readings.py" configurationId="tests" />
     </history-entry>
+    <history-entry file="Unittests_in_test_stored_readings_py - 2018.09.09 at 12h 11m 03s.xml">
+      <configuration name="Unittests in test_stored_readings.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_in_test_stored_readings_py - 2018.09.09 at 12h 15m 26s.xml">
+      <configuration name="Unittests in test_stored_readings.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_in_test_stored_readings_py - 2018.09.09 at 12h 20m 05s.xml">
+      <configuration name="Unittests in test_stored_readings.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_in_test_stored_readings_py - 2018.09.09 at 12h 22m 49s.xml">
+      <configuration name="Unittests in test_stored_readings.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_in_test_stored_readings_py - 2018.09.09 at 12h 53m 10s.xml">
+      <configuration name="Unittests in test_stored_readings.py" configurationId="tests" />
+    </history-entry>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1616" height="876" extended-state="6" />
-    <editor active="true" />
+    <frame x="-8" y="-8" width="1040" height="744" extended-state="6" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.015209125" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.0149700595" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.0" sideWeight="0.14570858" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33378932" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.44630405" sideWeight="0.85429144" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.5555556" sideWeight="0.85429144" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.45746166" sideWeight="0.6726547" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.45641026" sideWeight="0.6726547" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -778,7 +788,8 @@
     <MESSAGE value="changed the way we import modules" />
     <MESSAGE value="add stored readings utilizing pandas to store data" />
     <MESSAGE value="test add readings withLoc and without, timing added to unnittest" />
-    <option name="LAST_COMMIT_MESSAGE" value="test add readings withLoc and without, timing added to unnittest" />
+    <MESSAGE value="added functionality to print readings and filter by serial number with associated unittests" />
+    <option name="LAST_COMMIT_MESSAGE" value="added functionality to print readings and filter by serial number with associated unittests" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -793,8 +804,13 @@
           <line>87</line>
           <option name="timeStamp" value="7" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/library/data_storage/test_stored_readings.py</url>
+          <line>103</line>
+          <option name="timeStamp" value="8" />
+        </line-breakpoint>
       </breakpoints>
-      <option name="time" value="8" />
+      <option name="time" value="9" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -1146,22 +1162,22 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/library/data_storage/test_stored_readings.py">
+    <entry file="file://$PROJECT_DIR$/library/data_storage/stored_readings.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1462">
-          <caret line="86" column="30" lean-forward="false" selection-start-line="86" selection-start-column="30" selection-end-line="86" selection-end-column="30" />
+        <state relative-caret-position="357">
+          <caret line="17" column="92" lean-forward="false" selection-start-line="17" selection-start-column="92" selection-end-line="17" selection-end-column="92" />
           <folding>
-            <element signature="e#122#137#0" expanded="true" />
+            <element signature="e#163#182#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/library/data_storage/stored_readings.py">
+    <entry file="file://$PROJECT_DIR$/library/data_storage/test_stored_readings.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="24" column="43" lean-forward="false" selection-start-line="24" selection-start-column="36" selection-end-line="24" selection-end-column="43" />
+        <state relative-caret-position="2016">
+          <caret line="105" column="0" lean-forward="false" selection-start-line="105" selection-start-column="0" selection-end-line="105" selection-end-column="0" />
           <folding>
-            <element signature="e#48#67#0" expanded="true" />
+            <element signature="e#122#137#0" expanded="true" />
           </folding>
         </state>
       </provider>
