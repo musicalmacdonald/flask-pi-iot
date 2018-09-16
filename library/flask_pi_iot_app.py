@@ -3,11 +3,13 @@ from flask import render_template
 from flask import request
 from flask import jsonify
 import requests
-from library.pi_iot_data import pi_iot_data as piData
+from library.data_storage import stored_readings as sR
 
 app = Flask(__name__)
 
-data = piData.piIotData()
+dataStore = sR.StoredReadings()
+
+# TODO: check that the methods on dataStore match up with StoredReadings
 
 @app.route('/test', methods=['POST','GET'])
 def my_test():
@@ -18,8 +20,8 @@ def my_test():
         print("Here's what's in the request.form:  ")
         print(request.form)
         d = request.form
-        data.add_reading(d["serial-no"], d["timestamp"], d["x"], d["y"], d["z"])
-        print(data.get_number_readings())
+        dataStore.add_reading(d["serial-no"], d["timestamp"], d["x"], d["y"], d["z"])
+        print(dataStore.get_number_readings())
         return("Data added")
     return("Test page")
 
@@ -76,6 +78,6 @@ def alldata_page():
         pass
     print("All Data got a GET")
     print(request.form)
-    d=data.get_readings()
+    d = dataStore.get_readings()
     print(d)
     return render_template('alldata.html', data = d)

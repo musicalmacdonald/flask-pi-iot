@@ -50,6 +50,12 @@ class StoredReadings:
         return d
 
 
+    def get_all_data_as_list(self):
+        dataList = []
+        one = self.get_first_reading()
+        dataList.append(one)
+    #     TODO: use a while loop and compare self.i to number of readings.
+
     def get_readings_by_serial(self, serial):
         return self.df.query('serial_no == {}'.format(serial))
 

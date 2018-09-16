@@ -105,6 +105,23 @@ class TestStoredReadings(unittest.TestCase):
         self.assertTrue(len(nr) == 5)
         self.assertTrue(nr['serial_no'] == 'SHANE0000000')
 
+    def test_get_all_data_as_list(self):
+        print("Starting get all data as list test")
+        aSR = StoredReadings()
+        serialNo = ['MEGAN0000000', 'SHANE0000000', 250]
+
+        for i in range(0, 3):
+            x = random.randint(0, 358)
+            y = random.randint(0, 358)
+            z = random.randint(0, 358)
+            serialNumber = serialNo[i]
+            date = datetime.datetime
+            aSR.add_readings(serialNumber, 'date', x, y, z)
+        dataList = aSR.get_all_data_as_list()
+        n = aSR.get_number_of_readings()
+        self.assertTrue(type(dataList) == list)
+        self.assertTrue(len(list) == n)
+
 
     # def test_get_readings_by_serial(self):
     #
