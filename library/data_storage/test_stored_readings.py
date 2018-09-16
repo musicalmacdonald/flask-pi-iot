@@ -84,7 +84,27 @@ class TestStoredReadings(unittest.TestCase):
 
         self.assertTrue(type(fr) == dict)
         self.assertTrue(len(fr) == 5)
-        self.assertTrue(fr['serial_no'] == 'MEGAN0000000' )
+        self.assertTrue(fr['serial_no'] == 'MEGAN0000000')
+
+    def test_get_next_reading(self):
+        print("Start Get Next Reading Test")
+        aSR = StoredReadings()
+        serialNo = ['MEGAN0000000', 'SHANE0000000', 250]
+
+        for i in range(0, 3):
+            x = random.randint(0, 358)
+            y = random.randint(0, 358)
+            z = random.randint(0, 358)
+            serialNumber = serialNo[i]
+            date = datetime.datetime
+            aSR.add_readings(serialNumber, 'date', x, y, z)
+
+        nr = aSR.get_next_reading()
+
+        self.assertTrue(type(nr) == dict)
+        self.assertTrue(len(nr) == 5)
+        self.assertTrue(nr['serial_no'] == 'SHANE0000000')
+
 
     # def test_get_readings_by_serial(self):
     #
