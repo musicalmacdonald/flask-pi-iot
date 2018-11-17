@@ -1,11 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="8cbda816-2fa9-44d4-b9c0-165a5af72d42" name="Default" comment="">
+    <list default="true" id="8cbda816-2fa9-44d4-b9c0-165a5af72d42" name="Default" comment="create test_get_all_data_as_list">
+      <change beforePath="" afterPath="$PROJECT_DIR$/library/static/bootstrapcss/bootstrap-grid.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/library/static/bootstrapcss/bootstrap-grid.css.map" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/library/static/bootstrapcss/bootstrap-grid.min.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/library/static/bootstrapcss/bootstrap-grid.min.css.map" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/library/static/bootstrapcss/bootstrap-reboot.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/library/static/bootstrapcss/bootstrap-reboot.css.map" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/library/static/bootstrapcss/bootstrap-reboot.min.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/library/static/bootstrapcss/bootstrap-reboot.min.css.map" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/library/static/bootstrapcss/bootstrap.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/library/static/bootstrapcss/bootstrap.css.map" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/library/static/bootstrapcss/bootstrap.min.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/library/static/bootstrapcss/bootstrap.min.css.map" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/library/static/js/bootstrap.bundle.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/library/static/js/bootstrap.bundle.js.map" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/library/static/js/bootstrap.bundle.min.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/library/static/js/bootstrap.bundle.min.js.map" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/library/static/js/bootstrap.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/library/static/js/bootstrap.js.map" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/library/static/js/bootstrap.min.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/library/static/js/bootstrap.min.js.map" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/library/data_storage/stored_readings.py" afterPath="$PROJECT_DIR$/library/data_storage/stored_readings.py" />
-      <change beforePath="$PROJECT_DIR$/library/data_storage/test_stored_readings.py" afterPath="$PROJECT_DIR$/library/data_storage/test_stored_readings.py" />
-      <change beforePath="$PROJECT_DIR$/library/flask_pi_iot_app.py" afterPath="$PROJECT_DIR$/library/flask_pi_iot_app.py" />
+      <change beforePath="$PROJECT_DIR$/library/templates/base.html" afterPath="$PROJECT_DIR$/library/templates/base.html" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -19,7 +37,7 @@
       <file leaf-file-name="flask_pi_iot_app.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/library/flask_pi_iot_app.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="242">
+            <state relative-caret-position="0">
               <caret line="11" column="72" lean-forward="false" selection-start-line="11" selection-start-column="72" selection-end-line="11" selection-end-column="72" />
               <folding>
                 <element signature="e#0#23#0" expanded="true" />
@@ -28,11 +46,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="stored_readings.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="stored_readings.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/library/data_storage/stored_readings.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="459">
-              <caret line="49" column="16" lean-forward="true" selection-start-line="49" selection-start-column="16" selection-end-line="49" selection-end-column="16" />
+            <state relative-caret-position="334">
+              <caret line="49" column="16" lean-forward="false" selection-start-line="49" selection-start-column="16" selection-end-line="49" selection-end-column="16" />
               <folding>
                 <element signature="e#163#182#0" expanded="true" />
               </folding>
@@ -40,10 +58,20 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="base.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/library/templates/base.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="68">
+              <caret line="14" column="0" lean-forward="false" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="test_stored_readings.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/library/data_storage/test_stored_readings.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="456">
+            <state relative-caret-position="635">
               <caret line="119" column="23" lean-forward="false" selection-start-line="119" selection-start-column="23" selection-end-line="119" selection-end-column="43" />
               <folding>
                 <element signature="e#122#137#0" expanded="true" />
@@ -55,8 +83,8 @@
       <file leaf-file-name="pi_iot_data.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/library/pi_iot_data/pi_iot_data.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="360">
-              <caret line="18" column="29" lean-forward="true" selection-start-line="3" selection-start-column="4" selection-end-line="18" selection-end-column="29" />
+            <state relative-caret-position="323">
+              <caret line="19" column="0" lean-forward="false" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -106,7 +134,6 @@
         <option value="$PROJECT_DIR$/library/templates/katiepi.html" />
         <option value="$PROJECT_DIR$/library/templates/meganpi.html" />
         <option value="$PROJECT_DIR$/library/templates/jinja.py" />
-        <option value="$PROJECT_DIR$/library/templates/base.html" />
         <option value="$PROJECT_DIR$/library/templates/test_jinja.html" />
         <option value="$PROJECT_DIR$/jinja.py" />
         <option value="$PROJECT_DIR$/library/templates/alldata.html" />
@@ -122,14 +149,14 @@
         <option value="$PROJECT_DIR$/library/flask_pi_iot_app.py" />
         <option value="$PROJECT_DIR$/library/data_storage/test_stored_readings.py" />
         <option value="$PROJECT_DIR$/library/data_storage/stored_readings.py" />
+        <option value="$PROJECT_DIR$/library/templates/base.html" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-11" />
-    <option name="y" value="-20" />
-    <option name="width" value="1032" />
-    <option name="height" value="757" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="-7" />
+    <option name="width" value="1069" />
+    <option name="height" value="867" />
   </component>
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
@@ -146,6 +173,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -162,13 +190,14 @@
               <item name="flask-pi-iot" type="b2602c69:ProjectViewProjectNode" />
               <item name="flask-pi-iot" type="462c0819:PsiDirectoryNode" />
               <item name="library" type="462c0819:PsiDirectoryNode" />
-              <item name="data_storage" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="flask-pi-iot" type="b2602c69:ProjectViewProjectNode" />
               <item name="flask-pi-iot" type="462c0819:PsiDirectoryNode" />
               <item name="library" type="462c0819:PsiDirectoryNode" />
-              <item name="pi_iot_data" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+              <item name="js" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="flask-pi-iot" type="b2602c69:ProjectViewProjectNode" />
@@ -176,16 +205,10 @@
               <item name="library" type="462c0819:PsiDirectoryNode" />
               <item name="templates" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="flask-pi-iot" type="b2602c69:ProjectViewProjectNode" />
-              <item name="flask-pi-iot" type="462c0819:PsiDirectoryNode" />
-              <item name="pi_client" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scratches" />
       <pane id="Scope" />
     </panes>
   </component>
@@ -195,17 +218,17 @@
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\Megan\Documents\code\flask-pi-iot\pi_client\config" />
-      <recent name="C:\Users\Megan\Documents\code\flask-pi-iot" />
-      <recent name="C:\Users\Megan\Documents\code\flask-pi-iot\library\templates" />
-      <recent name="C:\Users\Megan\Documents\code\flask-pi-iot\library\pi-iot-data" />
-      <recent name="C:\Users\Megan\Documents\code\flask-pi-iot\pi_client" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\Megan\Documents\code\flask-pi-iot\pi_client" />
       <recent name="C:\Users\Megan\Documents\code\flask-pi-iot\library\templates" />
       <recent name="C:\Users\Megan\Documents\code\flask-pi-iot\library\pi_iot_data" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Megan\Documents\code\flask-pi-iot\library\static" />
+      <recent name="C:\Users\Megan\Documents\code\flask-pi-iot\pi_client\config" />
+      <recent name="C:\Users\Megan\Documents\code\flask-pi-iot" />
+      <recent name="C:\Users\Megan\Documents\code\flask-pi-iot\library\templates" />
+      <recent name="C:\Users\Megan\Documents\code\flask-pi-iot\library\pi-iot-data" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -220,7 +243,25 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python tests.Unittests in test_stored_readings.py">
+  <component name="RunManager" selected="Python.run_app">
+    <configuration name="flask_pi_iot_app" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/library" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="flask-pi-iot" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/library/flask_pi_iot_app.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+    </configuration>
     <configuration name="mock_data_poster" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -234,6 +275,24 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="flask-pi-iot" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/pi_client/mock_data_poster.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+    </configuration>
+    <configuration name="run_app" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="flask-pi-iot" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/run_app.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -257,42 +316,6 @@
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
     </configuration>
-    <configuration name="test_yml_config" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/pi_client/config" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="flask-pi-iot" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/pi_client/config/test_yml_config.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-    </configuration>
-    <configuration name="yml_config_from_url" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/pi_client/config" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="flask-pi-iot" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/pi_client/config/yml_config_from_url.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-    </configuration>
     <configuration name="Unittests in test_stored_readings.py" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -309,18 +332,18 @@
     </configuration>
     <list size="5">
       <item index="0" class="java.lang.String" itemvalue="Python.mock_data_poster" />
-      <item index="1" class="java.lang.String" itemvalue="Python.yml_config_from_url" />
-      <item index="2" class="java.lang.String" itemvalue="Python.test_yml_config" />
-      <item index="3" class="java.lang.String" itemvalue="Python.stored_readings" />
-      <item index="4" class="java.lang.String" itemvalue="Python tests.Unittests in test_stored_readings.py" />
+      <item index="1" class="java.lang.String" itemvalue="Python.stored_readings" />
+      <item index="2" class="java.lang.String" itemvalue="Python tests.Unittests in test_stored_readings.py" />
+      <item index="3" class="java.lang.String" itemvalue="Python.flask_pi_iot_app" />
+      <item index="4" class="java.lang.String" itemvalue="Python.run_app" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python tests.Unittests in test_stored_readings.py" />
-        <item index="1" class="java.lang.String" itemvalue="Python.stored_readings" />
-        <item index="2" class="java.lang.String" itemvalue="Python.mock_data_poster" />
-        <item index="3" class="java.lang.String" itemvalue="Python.test_yml_config" />
-        <item index="4" class="java.lang.String" itemvalue="Python.yml_config_from_url" />
+        <item index="0" class="java.lang.String" itemvalue="Python.run_app" />
+        <item index="1" class="java.lang.String" itemvalue="Python.flask_pi_iot_app" />
+        <item index="2" class="java.lang.String" itemvalue="Python tests.Unittests in test_stored_readings.py" />
+        <item index="3" class="java.lang.String" itemvalue="Python.stored_readings" />
+        <item index="4" class="java.lang.String" itemvalue="Python.mock_data_poster" />
       </list>
     </recent_temporary>
   </component>
@@ -674,7 +697,14 @@
       <option name="project" value="LOCAL" />
       <updated>1537119868721</updated>
     </task>
-    <option name="localTasksCounter" value="49" />
+    <task id="LOCAL-00049" summary="create test_get_all_data_as_list">
+      <created>1537128794555</created>
+      <option name="number" value="00049" />
+      <option name="presentableId" value="LOCAL-00049" />
+      <option name="project" value="LOCAL" />
+      <updated>1537128794555</updated>
+    </task>
+    <option name="localTasksCounter" value="50" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -710,19 +740,18 @@
     </history-entry>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1616" height="876" extended-state="6" />
-    <editor active="true" />
+    <frame x="-7" y="0" width="1069" height="867" extended-state="0" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.15019011" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.414161" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.0" sideWeight="0.14570858" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1324965" sideWeight="0.85429144" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33378932" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2457627" sideWeight="0.85429144" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.45641026" sideWeight="0.6726547" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.45641026" sideWeight="0.6726547" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -762,7 +791,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="change accel_post link to cloud foundry app" />
     <MESSAGE value="added serial number to accel_post" />
     <MESSAGE value="Added test to test getting a server list" />
     <MESSAGE value=".sh file, acquires latest code from master for testing" />
@@ -787,7 +815,8 @@
     <MESSAGE value="fixed datetime, built get_firs_reading() and associated test, changed data return type to dictionary instead of dataframe" />
     <MESSAGE value="added specific serial number assertion to get_first_reading" />
     <MESSAGE value="added get_next_reading and test" />
-    <option name="LAST_COMMIT_MESSAGE" value="added get_next_reading and test" />
+    <MESSAGE value="create test_get_all_data_as_list" />
+    <option name="LAST_COMMIT_MESSAGE" value="create test_get_all_data_as_list" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -808,13 +837,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/pi_client/accelerometer_post.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="13" column="46" lean-forward="false" selection-start-line="13" selection-start-column="46" selection-end-line="13" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/run_app.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
@@ -1012,13 +1034,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/library/templates/base.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="24" column="26" lean-forward="false" selection-start-line="22" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/pi_client/accelerometer_post.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
@@ -1117,7 +1132,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="73304">
           <caret line="4369" column="0" lean-forward="false" selection-start-line="4369" selection-start-column="0" selection-end-line="4369" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1125,7 +1139,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1360">
           <caret line="83" column="0" lean-forward="false" selection-start-line="83" selection-start-column="0" selection-end-line="83" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1133,21 +1146,12 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="9962">
           <caret line="599" column="0" lean-forward="false" selection-start-line="599" selection-start-column="0" selection-end-line="599" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/library/pi_iot_data/pi_iot_data.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="18" column="29" lean-forward="true" selection-start-line="3" selection-start-column="4" selection-end-line="18" selection-end-column="29" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/library/flask_pi_iot_app.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="242">
+        <state relative-caret-position="0">
           <caret line="11" column="72" lean-forward="false" selection-start-line="11" selection-start-column="72" selection-end-line="11" selection-end-column="72" />
           <folding>
             <element signature="e#0#23#0" expanded="true" />
@@ -1155,9 +1159,17 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/library/pi_iot_data/pi_iot_data.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="19" column="0" lean-forward="false" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/library/data_storage/test_stored_readings.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="456">
+        <state relative-caret-position="635">
           <caret line="119" column="23" lean-forward="false" selection-start-line="119" selection-start-column="23" selection-end-line="119" selection-end-column="43" />
           <folding>
             <element signature="e#122#137#0" expanded="true" />
@@ -1165,13 +1177,28 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Untitled.ipynb">
+      <provider selected="true" editor-type-id="ipnb-editor">
+        <state>
+          <selected id="0" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/library/data_storage/stored_readings.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="49" column="16" lean-forward="true" selection-start-line="49" selection-start-column="16" selection-end-line="49" selection-end-column="16" />
+        <state relative-caret-position="334">
+          <caret line="49" column="16" lean-forward="false" selection-start-line="49" selection-start-column="16" selection-end-line="49" selection-end-column="16" />
           <folding>
             <element signature="e#163#182#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/library/templates/base.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="14" column="0" lean-forward="false" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
