@@ -8,6 +8,7 @@ import unittest
 import datetime
 import time
 import random
+from pathlib import Path
 from .stored_readings import StoredReadings
 
 
@@ -109,18 +110,34 @@ class TestStoredReadings(unittest.TestCase):
         print("Starting get all data as list test")
         aSR = StoredReadings()
         serialNo = ['MEGAN0000000', 'SHANE0000000', 250]
-
         for i in range(0, 3):
             x = random.randint(0, 358)
             y = random.randint(0, 358)
             z = random.randint(0, 358)
             serialNumber = serialNo[i]
-            date = datetime.datetime
-            aSR.add_readings(serialNumber, 'date', x, y, z)
+            aSR.add_readings(serialNumber, datetime.datetime.now(), x, y, z)
+
         dataList = aSR.get_all_data_as_list()
         n = aSR.get_number_of_readings()
+
         self.assertTrue(type(dataList) == list)
-        self.assertTrue(len(list) == n)
+        self.assertTrue(len(dataList) == n)
+
+    def test_save_all_data(self):
+        print("Starting save all data test")
+        aSR = StoredReadings()
+        serialNo = ['MEGAN0000000', 'SHANE0000000', 250]
+        for i in range(0, 3):
+            x = random.randint(0, 358)
+            y = random.randint(0, 358)
+            z = random.randint(0, 358)
+            serialNumber = serialNo[i]
+            aSR.add_readings(serialNumber, datetime.datetime.now(), x, y, z)
+
+        aSR.save_all_data('my_file_name')
+        my_file = Path('./my_file_name.xlsx')
+
+        self.assertTrue(my_file.exists())
 
 
     # def test_get_readings_by_serial(self):
@@ -143,6 +160,8 @@ class TestStoredReadings(unittest.TestCase):
     #     #n = serialList.get_number_of_readings()
     #     print('n is: {}'.format(n))
     #     self.assertTrue(n == 1)
+
+
 
 
 

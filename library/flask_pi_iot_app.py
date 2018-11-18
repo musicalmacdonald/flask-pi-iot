@@ -11,7 +11,8 @@ dataStore = sR.StoredReadings()
 
 # TODO: check that the methods on dataStore match up with StoredReadings
 
-@app.route('/test', methods=['POST','GET'])
+
+@app.route('/test', methods=['POST', 'GET'])
 def my_test():
     if request.method == "POST":
         print("/test")
@@ -20,10 +21,11 @@ def my_test():
         print("Here's what's in the request.form:  ")
         print(request.form)
         d = request.form
-        dataStore.add_reading(d["serial-no"], d["timestamp"], d["x"], d["y"], d["z"])
-        print(dataStore.get_number_readings())
-        return("Data added")
-    return("Test page")
+        dataStore.add_readings(d["serial-no"], d["timestamp"], d["x"], d["y"], d["z"])
+        print(dataStore.get_number_of_readings())
+        return "Data added"
+    return "Test page"
+
 
 @app.route('/yaml')
 def my_yaml_microservice():
@@ -36,14 +38,27 @@ def my_yaml_microservice():
 def main_page():
     return render_template('index.html')
 
-@app.route('/johnpi.html',methods=['POST','GET'])
+
+@app.route('/alldata.html',methods=['POST', 'GET'])
+def alldata_page():
+    if request.method == 'POST':
+        pass
+    print("All Data got a GET")
+    print(request.form)
+    d = dataStore.get_all_data_as_list()
+    print(d)
+    return render_template('alldata.html', data=d)
+
+
+@app.route('/johnpi.html', methods=['POST', 'GET'])
 def john_page():
     if request.method == 'POST':
         print("JohnPi got a post")
         print(request.form)
     return render_template('johnpi.html')
 
-@app.route('/meganpi.html',methods=['POST','GET'])
+
+@app.route('/meganpi.html', methods=['POST', 'GET'])
 def megan_page():
     if request.method == 'POST':
         print("MeganPi got a post")
@@ -51,33 +66,28 @@ def megan_page():
     return render_template('meganpi.html')
 
 
-@app.route('/katiepi.html',methods=['POST','GET'])
+@app.route('/katiepi.html', methods=['POST', 'GET'])
 def katie_page():
     if request.method == 'POST':
         print("KatiePi got a post")
         print(request.form)
     return render_template('katiepi.html')
 
-@app.route('/davidpi.html',methods=['POST','GET'])
+
+@app.route('/davidpi.html', methods=['POST', 'GET'])
 def david_page():
     if request.method == 'POST':
         print("DavidPi got a post")
         print(request.form)
     return render_template('davidpi.html')
 
-@app.route('/shanepi.html',methods=['POST','GET'])
+
+@app.route('/shanepi.html', methods=['POST', 'GET'])
 def shane_page():
     if request.method == 'POST':
         print("ShanePi got a post")
         print(request.form)
     return render_template('shanepi.html')
 
-@app.route('/alldata.html',methods=['POST','GET'])
-def alldata_page():
-    if request.method == 'POST':
-        pass
-    print("All Data got a GET")
-    print(request.form)
-    d = dataStore.get_readings()
-    print(d)
-    return render_template('alldata.html', data = d)
+
+

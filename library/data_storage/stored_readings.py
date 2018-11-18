@@ -19,8 +19,8 @@ class StoredReadings:
         self.df.loc[self.df.shape[0]] = {'serial_no': serial_no, 'timestamp': datetime.now(), 'x': x, 'y': y, 'z': z}
 
     def get_number_of_readings(self):
-        #n = self.df.shape[0]
-        n = self.df.index.max()+1
+        n = self.df.shape[0]
+        # n = self.df.index.max()+1
         return n
 
     # TODO: get rid of console log (how to make a print for html?)
@@ -49,15 +49,35 @@ class StoredReadings:
         }
         return d
 
-
     def get_all_data_as_list(self):
         dataList = []
         one = self.get_first_reading()
         dataList.append(one)
-    #     TODO: use a while loop and compare self.i to number of readings.
+        while True:
+            try:
+                nextReading = self.get_next_reading()
+                dataList.append(nextReading)
+            except Exception as ex:
+                # print("We got an unexpected error {}.".format(ex))
+                return dataList
 
     def get_readings_by_serial(self, serial):
         return self.df.query('serial_no == {}'.format(serial))
+
+    def save_all_data(self, file):
+        n = self.get_number_of_readings()
+        if n >= 1000:
+            self.fileNumber = self.fileNumber + 1
+            if file:
+                filename = file
+            else:
+                filename = 'Saved Readings' + str(self.fileNumber) + '.xlsx'
+            print('Saving the last 1000 readings to {}'.format(filename))
+            writer = pd.ExcelWriter(filename, engine='xlsxwriter')
+            self.df.to_excel(writer, sheet_name='accelData')
+            writer.save()
+            self.df = []
+            self.df = pd.DataFrame(columns=['serial_no', 'timestamp', 'x', 'y', 'z'])
 
 
 

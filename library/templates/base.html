@@ -10,12 +10,8 @@
 </head>
 	
 	<page class="wrapper">
-		<header class="header">Home
-			<ul class="navigation">
-
-			 </ul>
-
-			<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+		<header>
+			<nav class="navbar navbar-expand-lg navbar-dark bg-dark header">
 			  <a class="navbar-brand"  href="{{url_for('main_page') }}">Home</a>
 			  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 				<span class="navbar-toggler-icon"></span>
@@ -31,8 +27,8 @@
 					  Individual Pie Data
 					</a>
 					<div class="dropdown-menu" aria-labelledby="navbarDropdown">
-					 	<a class="dropdown-item" href="{{url_for('john_page') }}">John</a>
-					 	<div class="dropdown-divider"></div>
+						<a class="dropdown-item" href="{{url_for('john_page') }}">John</a>
+						<div class="dropdown-divider"></div>
 						<a class="dropdown-item" href="{{url_for('megan_page') }}">Megan</a>
 						<a class="dropdown-item" href="{{url_for('katie_page') }}">Katie</a>
 						<a class="dropdown-item" href="{{url_for('david_page') }}">David</a>
@@ -52,8 +48,6 @@
 			{% endblock %}
 		</main-content>
 
-
-		<footer class="footer"></footer>
 	</page>
 	
 </body>
