@@ -10,7 +10,7 @@ class YamlConfig():
         response = requests.get(url)
         if response.status_code == 200:
             config = yaml.load(response.text)
-            l = config['serverList']
+            l = config['servers']
             # print(l)
         return l
 

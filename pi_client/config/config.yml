@@ -4,7 +4,7 @@ servers:
   - http://david-pi-iot.cfapps.io/test
   - http://jpf-flask-pi-iot.cfapps.io/test
   - http://shane-pi-iot.cfapps.io/test
-  - http://10.0.0.97
+  - http://10.0.0.97:8080
 
 
 

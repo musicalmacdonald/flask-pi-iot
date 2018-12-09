@@ -20,7 +20,7 @@ class DataPoster():
         self._invalid_servers = []
         # this gets the server list from Katie's github, it will work if Katie runs the server (list not accurate for everyone else)
         # TODO: edit my config.yml to work with my computer, add to github, change url below to point to mine
-        self._server_list = y.yml_config_from_url("https://raw.githubusercontent.com/katiebrown0729/flask-pi-iot/master/pi_client/config/config.yml")
+        self._server_list = y.yml_config_from_url("https://raw.githubusercontent.com/musicalmacdonald/flask-pi-iot/master/pi_client/config/config.yml")
 
     def getserial(self):
         # Extract serial from cpuinfo file
