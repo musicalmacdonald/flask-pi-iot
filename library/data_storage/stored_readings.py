@@ -4,6 +4,8 @@
 import pandas as pd
 from datetime import datetime
 import numpy as np
+import xlsxwriter
+
 
 
 class StoredReadings:
@@ -11,9 +13,11 @@ class StoredReadings:
         #empty dataframe
         self.df = pd.DataFrame(columns=['serial_no', 'timestamp', 'x', 'y', 'z'])
         self.i = 0
+        self.fileNumber = 0
 
     def add_readings(self, serial_no, timestamp, x, y, z):
         self.df = self.df.append({'serial_no': serial_no, 'timestamp': datetime.now(), 'x': x, 'y': y, 'z': z}, ignore_index=True)
+        self.save_all_data()
 
     def add_readings_withLoc(self, serial_no, timestamp, x, y, z):
         self.df.loc[self.df.shape[0]] = {'serial_no': serial_no, 'timestamp': datetime.now(), 'x': x, 'y': y, 'z': z}
@@ -65,16 +69,14 @@ class StoredReadings:
     def get_readings_by_serial(self, serial):
         return self.df.query('serial_no == {}'.format(serial))
 
-    def save_all_data(self, file):
+    def save_all_data(self):
         n = self.get_number_of_readings()
         if n >= 1000:
             self.fileNumber = self.fileNumber + 1
-            if file:
-                filename = file
-            else:
-                filename = 'Saved Readings' + str(self.fileNumber) + '.xlsx'
+            filename = 'Saved Readings' + str(self.fileNumber) + '.xlsx'
             print('Saving the last 1000 readings to {}'.format(filename))
             writer = pd.ExcelWriter(filename, engine='xlsxwriter')
+
             self.df.to_excel(writer, sheet_name='accelData')
             writer.save()
             self.df = []

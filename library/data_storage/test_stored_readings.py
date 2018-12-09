@@ -127,15 +127,15 @@ class TestStoredReadings(unittest.TestCase):
         print("Starting save all data test")
         aSR = StoredReadings()
         serialNo = ['MEGAN0000000', 'SHANE0000000', 250]
-        for i in range(0, 3):
+        for i in range(0, 1001):
             x = random.randint(0, 358)
             y = random.randint(0, 358)
             z = random.randint(0, 358)
-            serialNumber = serialNo[i]
+            serialNumber = serialNo[0]
             aSR.add_readings(serialNumber, datetime.datetime.now(), x, y, z)
 
-        aSR.save_all_data('my_file_name')
-        my_file = Path('./my_file_name.xlsx')
+        aSR.save_all_data()
+        my_file = Path('./Saved Readings1.xlsx')
 
         self.assertTrue(my_file.exists())
 

@@ -15,11 +15,11 @@
             <tbody>
                 {% for item in data %}
                     <tr>
-                        <td> {{item[0]}} </td>
-                        <td> {{item[1]}} </td>
-                        <td> {{item[2]}} </td>
-                        <td> {{item[3]}} </td>
-                        <td> {{item[4]}} </td>
+                        <td> {{item.serial_no}} </td>
+                        <td> {{item.timestamp}} </td>
+                        <td> {{item.x}} </td>
+                        <td> {{item.y}} </td>
+                        <td> {{item.z}} </td>
                     </tr>
                 {% endfor %}
             </tbody>

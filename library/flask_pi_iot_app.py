@@ -21,8 +21,9 @@ def my_test():
         print("Here's what's in the request.form:  ")
         print(request.form)
         d = request.form
-        dataStore.add_readings(d["serial-no"], d["timestamp"], d["x"], d["y"], d["z"])
+        dataStore.add_readings(d["serial_no"], d["timestamp"], d["x"], d["y"], d["z"])
         print(dataStore.get_number_of_readings())
+        print("Data Added")
         return "Data added"
     return "Test page"
 
@@ -36,6 +37,7 @@ def my_yaml_microservice():
 @app.route('/')
 @app.route('/index.html')
 def main_page():
+    print("rendering index.html")
     return render_template('index.html')
 
 

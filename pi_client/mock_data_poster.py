@@ -48,10 +48,10 @@ class DataPoster():
             r = requests.get(getUrl)
             if r.status_code != 200:
                 self._invalid_servers.append(server)
-                # print('Added {} to INVALID server list' .format(server))
+                print('Added {} to INVALID server list' .format(server))
             else:
                 self._valid_servers.append(server)
-                # print('Added {} to VALID server list'.format(server))
+                print('Added {} to VALID server list'.format(server))
         return(self._valid_servers)
 
     def accel_read(self):
@@ -89,7 +89,7 @@ class DataPoster():
         print('X={0}, Y={1}, Z={2}'.format(x, y, z))
         ts = datetime.datetime.fromtimestamp(time.time()).strftime('%Y-%m-%d %H:%M:%S')
         myserial = self.getserial()
-        aData = {'serial-no': myserial, 'timestamp': ts, 'x': x, 'y': y, 'z': z}
+        aData = {'serial_no': myserial, 'timestamp': ts, 'x': x, 'y': y, 'z': z}
         print(aData)
         return aData
 
