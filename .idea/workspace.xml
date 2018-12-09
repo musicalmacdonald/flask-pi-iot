@@ -3,11 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="8cbda816-2fa9-44d4-b9c0-165a5af72d42" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/library/data_storage/stored_readings.py" afterPath="$PROJECT_DIR$/library/data_storage/stored_readings.py" />
-      <change beforePath="$PROJECT_DIR$/library/data_storage/test_stored_readings.py" afterPath="$PROJECT_DIR$/library/data_storage/test_stored_readings.py" />
-      <change beforePath="$PROJECT_DIR$/library/flask_pi_iot_app.py" afterPath="$PROJECT_DIR$/library/flask_pi_iot_app.py" />
-      <change beforePath="$PROJECT_DIR$/library/templates/alldata.html" afterPath="$PROJECT_DIR$/library/templates/alldata.html" />
-      <change beforePath="$PROJECT_DIR$/pi_client/mock_data_poster.py" afterPath="$PROJECT_DIR$/pi_client/mock_data_poster.py" />
+      <change beforePath="$PROJECT_DIR$/requirements.txt" afterPath="$PROJECT_DIR$/requirements.txt" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -21,16 +17,14 @@
       <file leaf-file-name="stored_readings.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/library/data_storage/stored_readings.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="109">
-              <caret line="19" column="27" lean-forward="false" selection-start-line="19" selection-start-column="27" selection-end-line="19" selection-end-column="27" />
-              <folding>
-                <element signature="e#163#182#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="108">
+              <caret line="6" column="7" lean-forward="false" selection-start-line="6" selection-start-column="7" selection-end-line="6" selection-end-column="17" />
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="test_stored_readings.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="test_stored_readings.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/library/data_storage/test_stored_readings.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="85">
@@ -38,6 +32,16 @@
               <folding>
                 <element signature="e#122#137#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="requirements.txt" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/requirements.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="68">
+              <caret line="4" column="5" lean-forward="false" selection-start-line="4" selection-start-column="5" selection-end-line="4" selection-end-column="5" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -107,6 +111,7 @@
         <option value="$PROJECT_DIR$/pi_client/config/config.yml" />
         <option value="$PROJECT_DIR$/library/data_storage/test_stored_readings.py" />
         <option value="$PROJECT_DIR$/library/data_storage/stored_readings.py" />
+        <option value="$PROJECT_DIR$/requirements.txt" />
       </list>
     </option>
   </component>
@@ -326,13 +331,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1526604737195</updated>
-    </task>
-    <task id="LOCAL-00008" summary=".sh file, acquires latest code from master for testing">
-      <created>1527448858852</created>
-      <option name="number" value="00008" />
-      <option name="presentableId" value="LOCAL-00008" />
-      <option name="project" value="LOCAL" />
-      <updated>1527448858852</updated>
     </task>
     <task id="LOCAL-00009" summary=".sh file, acquires latest code from master for testing">
       <created>1527449177777</created>
@@ -670,7 +668,14 @@
       <option name="project" value="LOCAL" />
       <updated>1544384616979</updated>
     </task>
-    <option name="localTasksCounter" value="57" />
+    <task id="LOCAL-00057" summary="updated save_all_data to write to local excel file">
+      <created>1544388649507</created>
+      <option name="number" value="00057" />
+      <option name="presentableId" value="LOCAL-00057" />
+      <option name="project" value="LOCAL" />
+      <updated>1544388649507</updated>
+    </task>
+    <option name="localTasksCounter" value="58" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -767,7 +772,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Add_reading integrated into flask website" />
     <MESSAGE value="add shanepi.html, approute and nav reference&#10;&#10;update alldata.html to post accelerometer data in a table" />
     <MESSAGE value="update to jija template standards (add base html with extends keywords)" />
     <MESSAGE value="experiment with jija template without flask - renders simple html" />
@@ -792,7 +796,8 @@
     <MESSAGE value="fix config to allow to run locally" />
     <MESSAGE value="fix config part 2" />
     <MESSAGE value="fix config part 3" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix config part 3" />
+    <MESSAGE value="updated save_all_data to write to local excel file" />
+    <option name="LAST_COMMIT_MESSAGE" value="updated save_all_data to write to local excel file" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -818,13 +823,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/library/templates/davidpi.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="18" lean-forward="false" selection-start-line="6" selection-start-column="18" selection-end-line="6" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/library/templates/johnpi.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
@@ -1178,16 +1176,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/library/data_storage/stored_readings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="109">
-          <caret line="19" column="27" lean-forward="false" selection-start-line="19" selection-start-column="27" selection-end-line="19" selection-end-column="27" />
-          <folding>
-            <element signature="e#163#182#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/library/data_storage/test_stored_readings.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
@@ -1195,6 +1183,22 @@
           <folding>
             <element signature="e#122#137#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/library/data_storage/stored_readings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="6" column="7" lean-forward="false" selection-start-line="6" selection-start-column="7" selection-end-line="6" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/requirements.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="5" lean-forward="false" selection-start-line="4" selection-start-column="5" selection-end-line="4" selection-end-column="5" />
+          <folding />
         </state>
       </provider>
     </entry>
