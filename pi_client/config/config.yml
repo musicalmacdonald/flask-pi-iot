@@ -4,11 +4,8 @@ servers:
   - http://david-pi-iot.cfapps.io/test
   - http://jpf-flask-pi-iot.cfapps.io/test
   - http://shane-pi-iot.cfapps.io/test
-beers:
-  - blue moon
-  - killians
-  - something yummy
-  - banquet
+  - http://10.0.0.97/test
+
 
 
 
