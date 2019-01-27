@@ -5,7 +5,7 @@ import pandas as pd
 from datetime import datetime
 import numpy as np
 import xlsxwriter
-
+import sqlite3
 
 
 class StoredReadings:
@@ -82,7 +82,24 @@ class StoredReadings:
             self.df = []
             self.df = pd.DataFrame(columns=['serial_no', 'timestamp', 'x', 'y', 'z'])
 
+#     add a funtion to add readings to a database instead of saving locally
+    def add_readings_to_db(self, serial_no, ts, x, y, z):
+        conn = sqlite3.connect('data\\readings.db')
+        cur = conn.cursor()
+        sql_string = "INSERT INTO readings (x,y,z, serial_no, timestamp) VALUES ('{0}','{1}','{2}','{3}','{4}');".format(x, y, z, serial_no, ts)
+        cur.execute(sql_string)
+        conn.commit()
+        conn.close()
 
+    def get_number_readings_from_db(self):
+        conn = sqlite3.connect('data\\readings.db')
+        cur = conn.cursor()
+        cur.execute("SELECT COUNT(*) FROM readings")
+        result = cur.fetchall()
+        conn.commit()
+        conn.close()
+        count = result[0][0]
+        return count
 
 
 if __name__ == '__main__':

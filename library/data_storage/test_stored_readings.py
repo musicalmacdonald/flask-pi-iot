@@ -10,6 +10,7 @@ import time
 import random
 from pathlib import Path
 from .stored_readings import StoredReadings
+import os
 
 
 class TestStoredReadings(unittest.TestCase):
@@ -162,7 +163,23 @@ class TestStoredReadings(unittest.TestCase):
     #     self.assertTrue(n == 1)
 
 
-
+    def test_add_readings_to_db(self):
+        print("Starting Add Readings to DB test")
+        aSR = StoredReadings()
+        os.chdir('C:\\Users\\Megan\\Documents\\code\\flask-pi-iot')
+        print(os.getcwd())
+        initial_db_count = aSR.get_number_readings_from_db()
+        serialNo = ['MEGAN0000000', 'SHANE0000000', 250]
+        for i in range(0, 3):
+            x = random.randint(0, 358)
+            y = random.randint(0, 358)
+            z = random.randint(0, 358)
+            serialNumber = serialNo[i]
+            aSR.add_readings_to_db(serialNumber, datetime.datetime.now(), x, y, z)
+        final_db_count = aSR.get_number_readings_from_db()
+        test_db_count = final_db_count - initial_db_count
+        print("DB count is: {}".format(test_db_count))
+        self.assertTrue(test_db_count == 3)
 
 
 
