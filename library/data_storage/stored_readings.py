@@ -101,6 +101,13 @@ class StoredReadings:
         count = result[0][0]
         return count
 
+    def get_df_from_db_by_serial(self, serial_no):
+        conn = sqlite3.connect('data\\readings.db')
+        sql_string = "SELECT * FROM readings WHERE serial_no='{}'".format(serial_no)
+        df = pd.read_sql(sql_string, conn)
+        conn.close()
+        return df
+
 
 if __name__ == '__main__':
     print("running Stored Readings")

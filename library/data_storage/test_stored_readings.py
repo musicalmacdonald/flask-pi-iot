@@ -8,6 +8,7 @@ import unittest
 import datetime
 import time
 import random
+import sqlite3
 from pathlib import Path
 from .stored_readings import StoredReadings
 import os
@@ -181,7 +182,31 @@ class TestStoredReadings(unittest.TestCase):
         print("DB count is: {}".format(test_db_count))
         self.assertTrue(test_db_count == 3)
 
+    def test_get_df_from_db_by_serial(self):
+        print("Starting Get DF from DB test")
+        aSR = StoredReadings()
+        os.chdir('C:\\Users\\Megan\\Documents\\code\\flask-pi-iot')
+        print(os.getcwd())
 
+        for i in range(0, 3):
+            x = random.randint(0, 358)
+            y = random.randint(0, 358)
+            z = random.randint(0, 358)
+            serialNumber = "DFTEST00"
+            aSR.add_readings_to_db(serialNumber, datetime.datetime.now(), x, y, z)
+        dataframe = aSR.get_df_from_db_by_serial("DFTEST00")
+        print("DF from DB: {}".format(dataframe))
+
+        # Delete the records we just added for the test
+        conn = sqlite3.connect('data\\readings.db')
+        cur = conn.cursor()
+        sql_string = "DELETE FROM readings WHERE serial_no='DFTEST00'"
+        cur.execute(sql_string)
+        conn.commit()
+        conn.close()
+
+        # finish test
+        self.assertTrue(dataframe.shape[0] == 3)
 
 
 
