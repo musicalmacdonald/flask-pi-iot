@@ -15,11 +15,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="stored_readings.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="stored_readings.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/library/data_storage/stored_readings.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="592">
-              <caret line="108" column="17" lean-forward="false" selection-start-line="108" selection-start-column="17" selection-end-line="108" selection-end-column="17" />
+            <state relative-caret-position="23">
+              <caret line="71" column="0" lean-forward="false" selection-start-line="71" selection-start-column="0" selection-end-line="71" selection-end-column="0" />
               <folding>
                 <element signature="e#163#182#0" expanded="true" />
               </folding>
@@ -27,14 +27,24 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="test_stored_readings.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="test_stored_readings.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/library/data_storage/test_stored_readings.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2567">
-              <caret line="191" column="23" lean-forward="false" selection-start-line="191" selection-start-column="23" selection-end-line="191" selection-end-column="23" />
+            <state relative-caret-position="265">
+              <caret line="141" column="0" lean-forward="false" selection-start-line="141" selection-start-column="0" selection-end-line="141" selection-end-column="0" />
               <folding>
                 <element signature="e#122#137#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="flask_pi_iot_app.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/library/flask_pi_iot_app.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="664">
+              <caret line="49" column="18" lean-forward="false" selection-start-line="49" selection-start-column="18" selection-end-line="49" selection-end-column="40" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -62,7 +72,7 @@
       <file leaf-file-name="alldata.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/library/templates/alldata.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
+            <state relative-caret-position="78">
               <caret line="7" column="30" lean-forward="false" selection-start-line="7" selection-start-column="30" selection-end-line="7" selection-end-column="30" />
               <folding />
             </state>
@@ -107,6 +117,8 @@
       <find>serial-no</find>
       <find>import</find>
       <find>datet</find>
+      <find>for</find>
+      <find>.append</find>
     </findStrings>
     <replaceStrings>
       <replace>datetime.datetime.now()</replace>
@@ -147,15 +159,15 @@
         <option value="$PROJECT_DIR$/pi_client/mock_data_poster.py" />
         <option value="$PROJECT_DIR$/pi_client/config/config.yml" />
         <option value="$PROJECT_DIR$/requirements.txt" />
-        <option value="$PROJECT_DIR$/library/data_storage/stored_readings.py" />
         <option value="$PROJECT_DIR$/library/data_storage/test_stored_readings.py" />
+        <option value="$PROJECT_DIR$/library/data_storage/stored_readings.py" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="-7" />
-    <option name="width" value="814" />
-    <option name="height" value="867" />
+    <option name="width" value="526" />
+    <option name="height" value="735" />
   </component>
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
@@ -172,6 +184,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -182,18 +195,7 @@
             <path>
               <item name="flask-pi-iot" type="b2602c69:ProjectViewProjectNode" />
               <item name="flask-pi-iot" type="462c0819:PsiDirectoryNode" />
-              <item name="data" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="flask-pi-iot" type="b2602c69:ProjectViewProjectNode" />
-              <item name="flask-pi-iot" type="462c0819:PsiDirectoryNode" />
               <item name="library" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="flask-pi-iot" type="b2602c69:ProjectViewProjectNode" />
-              <item name="flask-pi-iot" type="462c0819:PsiDirectoryNode" />
-              <item name="library" type="462c0819:PsiDirectoryNode" />
-              <item name="data_storage" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="flask-pi-iot" type="b2602c69:ProjectViewProjectNode" />
@@ -201,23 +203,11 @@
               <item name="library" type="462c0819:PsiDirectoryNode" />
               <item name="templates" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="flask-pi-iot" type="b2602c69:ProjectViewProjectNode" />
-              <item name="flask-pi-iot" type="462c0819:PsiDirectoryNode" />
-              <item name="pi_client" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="flask-pi-iot" type="b2602c69:ProjectViewProjectNode" />
-              <item name="flask-pi-iot" type="462c0819:PsiDirectoryNode" />
-              <item name="pi_client" type="462c0819:PsiDirectoryNode" />
-              <item name="config" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
       <pane id="Scratches" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -368,13 +358,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1526604737195</updated>
-    </task>
-    <task id="LOCAL-00012" summary=".sh file, acquires latest code from master for testing">
-      <created>1527449880777</created>
-      <option name="number" value="00012" />
-      <option name="presentableId" value="LOCAL-00012" />
-      <option name="project" value="LOCAL" />
-      <updated>1527449880777</updated>
     </task>
     <task id="LOCAL-00013" summary=".sh file, acquires latest code from master for testing">
       <created>1527450357545</created>
@@ -712,38 +695,45 @@
       <option name="project" value="LOCAL" />
       <updated>1548621116824</updated>
     </task>
-    <option name="localTasksCounter" value="61" />
+    <task id="LOCAL-00061" summary="add a function and test to pull readings from database and put them into a dataframe">
+      <created>1551025912464</created>
+      <option name="number" value="00061" />
+      <option name="presentableId" value="LOCAL-00061" />
+      <option name="project" value="LOCAL" />
+      <updated>1551025912464</updated>
+    </task>
+    <option name="localTasksCounter" value="62" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="Unittests_in_test_stored_readings_py - 2018.12.09 at 13h 43m 06s.xml">
+    <history-entry file="Unittests_in_test_stored_readings_py - 2019.02.24 at 12h 22m 26s.xml">
       <configuration name="Unittests in test_stored_readings.py" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_in_test_stored_readings_py - 2018.12.09 at 13h 44m 03s.xml">
+    <history-entry file="Unittests_in_test_stored_readings_py - 2019.02.24 at 12h 37m 10s.xml">
       <configuration name="Unittests in test_stored_readings.py" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_in_test_stored_readings_py - 2019.01.27 at 12h 49m 46s.xml">
+    <history-entry file="Unittests_in_test_stored_readings_py - 2019.02.24 at 12h 41m 36s.xml">
       <configuration name="Unittests in test_stored_readings.py" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_in_test_stored_readings_py - 2019.01.27 at 13h 00m 25s.xml">
+    <history-entry file="Unittests_in_test_stored_readings_py - 2019.02.24 at 12h 42m 08s.xml">
       <configuration name="Unittests in test_stored_readings.py" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_in_test_stored_readings_py - 2019.01.27 at 13h 01m 39s.xml">
+    <history-entry file="Unittests_in_test_stored_readings_py - 2019.02.24 at 12h 44m 16s.xml">
       <configuration name="Unittests in test_stored_readings.py" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_in_test_stored_readings_py - 2019.01.27 at 13h 03m 46s.xml">
+    <history-entry file="Unittests_in_test_stored_readings_py - 2019.02.24 at 12h 45m 16s.xml">
       <configuration name="Unittests in test_stored_readings.py" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_in_test_stored_readings_py - 2019.01.27 at 13h 05m 44s.xml">
+    <history-entry file="Unittests_in_test_stored_readings_py - 2019.02.24 at 12h 45m 55s.xml">
       <configuration name="Unittests in test_stored_readings.py" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_in_test_stored_readings_py - 2019.01.27 at 13h 07m 42s.xml">
+    <history-entry file="Unittests_in_test_stored_readings_py - 2019.02.24 at 12h 48m 18s.xml">
       <configuration name="Unittests in test_stored_readings.py" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_in_test_stored_readings_py - 2019.02.24 at 09h 27m 14s.xml">
+    <history-entry file="Unittests_in_test_stored_readings_py - 2019.02.24 at 12h 49m 05s.xml">
       <configuration name="Unittests in test_stored_readings.py" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_in_test_stored_readings_py - 2019.02.24 at 09h 30m 49s.xml">
+    <history-entry file="Unittests_in_test_stored_readings_py - 2019.02.24 at 12h 50m 05s.xml">
       <configuration name="Unittests in test_stored_readings.py" configurationId="tests" />
     </history-entry>
   </component>
@@ -757,19 +747,18 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="0" width="814" height="867" extended-state="0" />
-    <editor active="true" />
+    <frame x="-8" y="-8" width="1040" height="744" extended-state="6" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18814433" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23053892" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32909605" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.0" sideWeight="0.14570858" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.45056498" sideWeight="0.85429144" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.45056498" sideWeight="0.39046392" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33378932" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32909605" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.5897436" sideWeight="0.6095361" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32909605" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4562147" sideWeight="0.6726547" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.17435898" sideWeight="0.6726547" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -809,7 +798,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="crete mock data poster with unit-testing to validate get_valid_servers" />
     <MESSAGE value="complete unittest for mock_data_poster, refactoring complicated calls" />
     <MESSAGE value="make function to execute data formation and formatting" />
     <MESSAGE value="wrapped post function in if statement to periodically check the valid server list" />
@@ -834,7 +822,8 @@
     <MESSAGE value="update project requirements for CF" />
     <MESSAGE value="fix typo" />
     <MESSAGE value="add a function to save readings to database" />
-    <option name="LAST_COMMIT_MESSAGE" value="add a function to save readings to database" />
+    <MESSAGE value="add a function and test to pull readings from database and put them into a dataframe" />
+    <option name="LAST_COMMIT_MESSAGE" value="add a function and test to pull readings from database and put them into a dataframe" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -846,11 +835,11 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/library/data_storage/stored_readings.py</url>
-          <line>73</line>
+          <line>87</line>
           <option name="timeStamp" value="29" />
         </line-breakpoint>
       </breakpoints>
-      <option name="time" value="30" />
+      <option name="time" value="32" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -1079,14 +1068,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/library/flask_pi_iot_app.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="41" column="0" lean-forward="false" selection-start-line="40" selection-start-column="39" selection-end-line="41" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/PycharmProjects/untitled/venv/Lib/site-packages/requests/sessions.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
@@ -1112,24 +1093,10 @@
     <entry file="file://$USER_HOME$/PycharmProjects/untitled/venv/Lib/site-packages/requests/packages/urllib3/_collections.py" />
     <entry file="file://$USER_HOME$/PycharmProjects/untitled/venv/Lib/site-packages/requests/packages/urllib3/request.py" />
     <entry file="file://$USER_HOME$/PycharmProjects/untitled/venv/Lib/site-packages/requests/packages/urllib3/util/retry.py" />
-    <entry file="file://$PROJECT_DIR$/run_app.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="33" lean-forward="false" selection-start-line="9" selection-start-column="33" selection-end-line="9" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/PycharmProjects/untitled/venv/Lib/site-packages/pandas/io/excel.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="126">
           <caret line="1717" column="8" lean-forward="false" selection-start-line="1717" selection-start-column="8" selection-end-line="1717" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python35/Lib/unittest/case.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="676" column="0" lean-forward="false" selection-start-line="676" selection-start-column="0" selection-end-line="676" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -1157,14 +1124,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/library/templates/alldata.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="30" lean-forward="false" selection-start-line="7" selection-start-column="30" selection-end-line="7" selection-end-column="30" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/pi_client/mock_data_poster.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
@@ -1175,22 +1134,54 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/library/data_storage/stored_readings.py">
+    <entry file="file://$PROJECT_DIR$/run_app.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="592">
-          <caret line="108" column="17" lean-forward="false" selection-start-line="108" selection-start-column="17" selection-end-line="108" selection-end-column="17" />
-          <folding>
-            <element signature="e#163#182#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="136">
+          <caret line="9" column="33" lean-forward="false" selection-start-line="9" selection-start-column="33" selection-end-line="9" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/library/templates/alldata.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="78">
+          <caret line="7" column="30" lean-forward="false" selection-start-line="7" selection-start-column="30" selection-end-line="7" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/library/flask_pi_iot_app.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="664">
+          <caret line="49" column="18" lean-forward="false" selection-start-line="49" selection-start-column="18" selection-end-line="49" selection-end-column="40" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python35/Lib/unittest/case.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="82">
+          <caret line="676" column="0" lean-forward="false" selection-start-line="676" selection-start-column="0" selection-end-line="676" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/library/data_storage/test_stored_readings.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2567">
-          <caret line="191" column="23" lean-forward="false" selection-start-line="191" selection-start-column="23" selection-end-line="191" selection-end-column="23" />
+        <state relative-caret-position="265">
+          <caret line="141" column="0" lean-forward="false" selection-start-line="141" selection-start-column="0" selection-end-line="141" selection-end-column="0" />
           <folding>
             <element signature="e#122#137#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/library/data_storage/stored_readings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="23">
+          <caret line="71" column="0" lean-forward="false" selection-start-line="71" selection-start-column="0" selection-end-line="71" selection-end-column="0" />
+          <folding>
+            <element signature="e#163#182#0" expanded="true" />
           </folding>
         </state>
       </provider>

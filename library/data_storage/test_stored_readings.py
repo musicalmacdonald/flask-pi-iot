@@ -9,6 +9,7 @@ import datetime
 import time
 import random
 import sqlite3
+import pandas
 from pathlib import Path
 from .stored_readings import StoredReadings
 import os
@@ -124,6 +125,26 @@ class TestStoredReadings(unittest.TestCase):
 
         self.assertTrue(type(dataList) == list)
         self.assertTrue(len(dataList) == n)
+
+    def test_get_df_as_list(self):
+        print("Starting Get Dataframe as list of Dicts test")
+        dataframe = pandas.DataFrame(columns=['serial_no', 'timestamp', 'x', 'y', 'z'])
+        serialNo = ['MEGAN0000000', 'SHANE0000000', 250]
+        for i in range(0, 3):
+            x = random.randint(0, 358)
+            y = random.randint(0, 358)
+            z = random.randint(0, 358)
+            serialNumber = serialNo[i]
+            dataframe = dataframe.append({'serial_no': serialNumber, 'timestamp': datetime.datetime.now(), 'x': x, 'y': y, 'z': z}, ignore_index=True)
+        n = dataframe.shape[0]
+        aSR = StoredReadings()
+        result = aSR.get_df_as_list(dataframe)
+        self.assertTrue(type(result) == list)
+        self.assertTrue(len(result) == n)
+        self.assertTrue(result[0]['serial_no'] == 'MEGAN0000000')
+        self.assertTrue(result[1]['serial_no'] == 'SHANE0000000')
+        self.assertTrue(result[2]['serial_no'] == 250)
+
 
     def test_save_all_data(self):
         print("Starting save all data test")

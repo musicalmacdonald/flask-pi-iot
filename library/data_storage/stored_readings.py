@@ -55,6 +55,7 @@ class StoredReadings:
         return d
 
     def get_all_data_as_list(self):
+        # TODO: refactor to make this use get_df_as_list
         dataList = []
         one = self.get_first_reading()
         dataList.append(one)
@@ -65,6 +66,19 @@ class StoredReadings:
             except Exception as ex:
                 # print("We got an unexpected error {}.".format(ex))
                 return dataList
+
+    def get_df_as_list(self, dataframe):
+        dataList = []
+        for i, row in dataframe.iterrows():
+
+            d = {'serial_no': dataframe.serial_no[i],
+                 'timestamp': dataframe.timestamp[i],
+                 'x': dataframe.x[i],
+                 'y': dataframe.y[i],
+                 'z': dataframe.z[i]}
+
+            dataList.append(d)
+        return dataList
 
     def get_readings_by_serial(self, serial):
         return self.df.query('serial_no == {}'.format(serial))
